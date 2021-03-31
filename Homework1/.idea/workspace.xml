@@ -23,7 +23,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.aaa">
     <configuration name="Homework1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Homework1" />
       <module name="Homework1" />
@@ -31,10 +31,64 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="aaa" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aaa" />
+      <module name="Homework1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.aaa" />
         <item itemvalue="Application.Homework1" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1899" height="374" key="GridCell.Tab.0.bottom" timestamp="1617036312574">
+      <screen x="1920" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1515" height="247" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1616926049039" />
+    <state width="1899" height="374" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1160@1920.0.1920.1160" timestamp="1617036312574" />
+    <state width="1899" height="374" key="GridCell.Tab.0.center" timestamp="1617036312574">
+      <screen x="1920" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1515" height="247" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1616926049038" />
+    <state width="1899" height="374" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1160@1920.0.1920.1160" timestamp="1617036312574" />
+    <state width="1899" height="374" key="GridCell.Tab.0.left" timestamp="1617036312574">
+      <screen x="1920" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1515" height="247" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1616926049038" />
+    <state width="1899" height="374" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1160@1920.0.1920.1160" timestamp="1617036312574" />
+    <state width="1899" height="374" key="GridCell.Tab.0.right" timestamp="1617036312574">
+      <screen x="1920" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1515" height="247" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1616926049038" />
+    <state width="1899" height="374" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1160@1920.0.1920.1160" timestamp="1617036312574" />
+    <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1616834531786">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1616834531786" />
+    <state width="1515" height="261" key="GridCell.Tab.1.center" timestamp="1616834531786">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1616834531786" />
+    <state width="1515" height="261" key="GridCell.Tab.1.left" timestamp="1616834531786">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1616834531786" />
+    <state width="1515" height="261" key="GridCell.Tab.1.right" timestamp="1616834531786">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1616834531786" />
+    <state x="2540" y="200" key="new project wizard" timestamp="1617169846229">
+      <screen x="1920" y="0" width="1920" height="1160" />
+    </state>
+    <state x="2540" y="200" key="new project wizard/0.0.1536.824/1920.0.1920.1160@1920.0.1920.1160" timestamp="1617169846229" />
+    <state x="2536" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1617036183862">
+      <screen x="1920" y="0" width="1920" height="1160" />
+    </state>
+    <state x="2536" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1160@1920.0.1920.1160" timestamp="1617036183862" />
   </component>
 </project>
