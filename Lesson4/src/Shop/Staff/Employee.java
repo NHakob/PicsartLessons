@@ -10,9 +10,9 @@ enum Position {
 public class Employee {
    private Human human;
    private Double salary;
-   private String position;
+   private Position position;
 
-    public Employee(Human human, Double salary, String position) {
+    public Employee(Human human, Double salary, Position position) {
         this.human = human;
         this.salary = salary;
         this.position = position;
@@ -34,11 +34,11 @@ public class Employee {
         this.salary = salary;
     }
 
-    public String getPosition() {
+    public Position getPosition() {
         return position;
     }
 
-    public void setPosition(String position) {
+    public void setPosition(Position position) {
         this.position = position;
     }
 }
