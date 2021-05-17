@@ -1,5 +1,2 @@
-Hero{x=7, y=3, name='Narek', hp=100, attack=12, defense=6, level=1}
-Hero{x=5, y=6, name='Gexam', hp=100, attack=12, defense=6, level=1}Hero{x=7, y=3, name='Narek', hp=100, attack=12, defense=6, level=1}
-Hero{x=5, y=6, name='Gexam', hp=100, attack=12, defense=6, level=1}Hero{x=7, y=3, name='Narek', hp=100, attack=12, defense=6, level=1}
-Hero{x=5, y=6, name='Gexam', hp=100, attack=12, defense=6, level=1}Hero{x=9, y=0, name='Narek', hp=100, attack=12, defense=6, level=1}
-Hero{x=9, y=0, name='Gexam', hp=100, attack=12, defense=6, level=1}
+Hero{x=2, y=1, name='Narek', hp=100, attack=12, defense=6, level=1}
+Hero{x=5, y=6, name='Valod', hp=100, attack=12, defense=6, level=1}

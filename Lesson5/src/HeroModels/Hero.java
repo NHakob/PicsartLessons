@@ -38,7 +38,7 @@ public class Hero {
         return x;
     }
 
-    protected void setX(Integer x) {
+    public void setX(Integer x) {
         this.x = x;
     }
 
@@ -50,11 +50,11 @@ public class Hero {
         return level;
     }
 
-    protected void setLevel(Integer level) {
+    public void setLevel(Integer level) {
         this.level = level;
     }
 
-    protected void setY(Integer y) {
+    public void setY(Integer y) {
         this.y = y;
     }
 
@@ -62,7 +62,7 @@ public class Hero {
         return name;
     }
 
-    protected void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -86,7 +86,7 @@ public class Hero {
         return hp;
     }
 
-    protected void setHp(Integer hp) {
+    public void setHp(Integer hp) {
         this.hp = hp;
     }
 
@@ -94,7 +94,7 @@ public class Hero {
         return attack;
     }
 
-    protected void setAttack(Integer attack) {
+    public void setAttack(Integer attack) {
         this.attack = attack;
     }
 
@@ -102,7 +102,7 @@ public class Hero {
         return defense;
     }
 
-    protected void setDefense(Integer defense) {
+    public void setDefense(Integer defense) {
         this.defense = defense;
     }
 

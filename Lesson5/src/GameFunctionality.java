@@ -1,15 +1,73 @@
 import HeroModels.Hero;
+import HeroModels.PlayerHero;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.io.*;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 public class GameFunctionality {
+    private String cleanUpData(String data) {
+        data = data.replace("Hero{","");
+        data = data.replace("}","");
+        data = data.replace(" ","");
+        data = data.replace("name=","");
+        data = data.replaceAll("'","");
+        data = data.replace("x=","");
+        data = data.replace("y=","");
+        data = data.replace("hp=","");
+        data = data.replace("attack=","");
+        data = data.replace("defense=","");
+        data = data.replace("level=","");
+
+        return data;
+    }
+
+    public void load() {
+        File saves = new File(String.valueOf("src\\Saves\\saves.txt"));
+
+        try {
+            BufferedReader savesReader = new BufferedReader(new FileReader("src\\Saves\\saves.txt"));
+            String data = savesReader.readLine();
+
+            data = cleanUpData(data);
+            Hero player1 = new PlayerHero(data.split(",")[2]);
+            player1.setX(Integer.valueOf(data.split(",")[0]));
+            player1.setY(Integer.valueOf(data.split(",")[1]));
+            player1.setHp(Integer.valueOf(data.split(",")[3]));
+            player1.setAttack(Integer.valueOf(data.split(",")[4]));
+            player1.setDefense(Integer.valueOf(data.split(",")[5]));
+            player1.setLevel(Integer.valueOf(data.split(",")[6]));
+            data = savesReader.readLine();
+
+            data = cleanUpData(data);
+            Hero player2 = new PlayerHero(data.split(",")[2]);
+            player2.setX(Integer.valueOf(data.split(",")[0]));
+            player2.setY(Integer.valueOf(data.split(",")[1]));
+            player2.setHp(Integer.valueOf(data.split(",")[3]));
+            player2.setAttack(Integer.valueOf(data.split(",")[4]));
+            player2.setDefense(Integer.valueOf(data.split(",")[5]));
+            player2.setLevel(Integer.valueOf(data.split(",")[6]));
+
+            play(player1, player2);
+        } catch (FileNotFoundException e) {
+            System.out.println("Sorry. Save file does not exist.");
+        } catch (IOException e) {
+            System.out.println("Sorry. File is corrupted.");
+        }
+    }
+
+    private void save(Hero p1, Hero p2) {
+        try {
+            File saves = new File(String.valueOf("src\\Saves\\saves.txt"));
+            saves.createNewFile();
+            FileOutputStream writer = new FileOutputStream(String.valueOf(saves), false);
+
+            writer.write((p1.toString() + "\n" + p2.toString()).getBytes());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public void play(Hero p1, Hero p2) {
         Scanner in = new Scanner(System.in);
         boolean firstPlayerTurn = true;
@@ -60,15 +118,7 @@ public class GameFunctionality {
                     firstPlayerTurn = !firstPlayerTurn;
                     break;
                 case 4:
-                    try {
-                        File saves = new File(String.valueOf("src\\Saves\\saves.txt"));
-                        saves.createNewFile();
-                        FileOutputStream writer = new FileOutputStream(String.valueOf(saves), false);
-
-                        writer.write((p1.toString() + "\n" + p2.toString()).getBytes());
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
+                    save(p1, p2);
                     break;
                 default:
                     System.out.println("Please enter option from following list");

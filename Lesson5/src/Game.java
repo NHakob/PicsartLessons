@@ -1,8 +1,5 @@
 import HeroModels.*;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Game {
@@ -28,7 +25,7 @@ public class Game {
                     gameFunctionality.play(player1, player2);
                     break;
                 case 2:
-                    //Add load functionality
+                    gameFunctionality.load();
                     break;
                 case 3:
                     return;
