@@ -1,18 +1,9 @@
-import java.io.Serializable;
 
-public class Student {
-    private String username;
-    private String email;
-    private String password;
-
-    public Student() {
-    }
-
-    public Student(String username, String email, String password) {
-        this.username = username;
-        this.email = email;
-        this.password = password;
-    }
+public enum Student {
+    INSTANCE;
+    public String username;
+    public String email;
+    public String password;
 
     public void printInfo() {
         System.out.println("username = " + this.username);
@@ -21,7 +12,7 @@ public class Student {
     }
 
     public String getUsername() {
-        return username;
+        return this.username;
     }
 
     public void setUsername(String username) {
